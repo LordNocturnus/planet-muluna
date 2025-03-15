@@ -1,4 +1,35 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.26.3
+Date: 2025-03-14
+  Balancing:
+    - Added Metallurgic Science pack to prerequisites of advanced-stone-processing.
+    - Reduced cost of Pre-Aquilo rocket part productivity technologies.
+  Bugfixes:
+    - Added crusher-2 to next_upgrade of crusher.
+  Changes:
+    - Internal refactoring of interstellar technologies code.
+---------------------------------------------------------------------------------------------------
+Version: 1.26.2
+Date: 2025-03-14
+  Compatibility:
+    - Removed hard dependency on Orbital Transfer.
+---------------------------------------------------------------------------------------------------
+Version: 1.26.1
+Date: 2025-03-14
+  Bugfixes:
+    - Fixed problematic interaction with Maraxsis that stopped the Interstellar Science Pack from being given a research vessel.
+---------------------------------------------------------------------------------------------------
+Version: 1.26.0
+Date: 2025-03-13
+  Features:
+    - Added "Oxygen venting" recipe
+    - Added Lunar greenhouse building
+  Balancing:
+    - Added maximum temperature value to wood growth recipes to prevent generating wood on Vulcanus.
+    - Doubled cost of ALICE propellant.
+    - Enabled productivity modules on wood gasification recipes.
+    - Set output temperature of "Controlled Combustion" to 165.
+---------------------------------------------------------------------------------------------------
 Version: 1.25.3
 Date: 2025-03-10
   Locale:

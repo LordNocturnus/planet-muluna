@@ -116,7 +116,7 @@ data:extend{
         unit= {
             count = 500,
             time = 30,
-            ingredients = data.raw["technology"]["productivity-module-2"].unit.ingredients
+            ingredients = table.deepcopy(data.raw["technology"]["coal-liquefaction"].unit.ingredients)
         },
         effects = {
             {
@@ -147,7 +147,7 @@ data:extend{
             
         },
         prerequisites = {
-            "space-science-pack"
+            "metallurgic-science-pack"
         },
     },
     {
@@ -194,6 +194,10 @@ data:extend{
             {
                 type = "unlock-recipe",
                 recipe = "hydrogen-venting"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "oxygen-venting"
             },
             {
                 type = "unlock-recipe",
@@ -546,8 +550,8 @@ data:extend{
     {
         type = "technology",
         name = "greenhouses",
-        icon = data.raw["technology"]["tree-seeding"].icon,
-        icon_size = data.raw["technology"]["tree-seeding"].icon_size,
+        icon = "__planet-muluna__/graphics/greenhouse/sprites/greenhouse-icon-big.png",--data.raw["technology"]["tree-seeding"].icon,
+        icon_size = 640,--data.raw["technology"]["tree-seeding"].icon_size,
         research_trigger = {
             type = "mine-entity",
             entity = "carbonic-asteroid-chunk"
@@ -592,6 +596,18 @@ data:extend{
                 type = "unlock-recipe",
                 recipe="wood-processing"
             },
+            {
+                type = "unlock-recipe",
+                recipe = "muluna-greenhouse",
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "muluna-greenhouse-wood",
+            },
+            -- {
+            --     type = "unlock-recipe",
+            --     recipe = "muluna-tree-growth-greenhouse-11x11"
+            -- }
 
         },
         
